@@ -38,7 +38,11 @@ const useAxios = (configObj) => {
 
         // useEffect cleanup function
         return () => controller.abort();
-    }, []);
+    }, [axiosInstance,
+        method,
+        params,
+        url,
+        requestConfig]);
 
     return [response, error, loading];
 }
