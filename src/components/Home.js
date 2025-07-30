@@ -1,13 +1,16 @@
 import React from 'react';
 
+// import libraries
+import Article from './Article'
+
 // CSS style
 
 
-const Home = (props) => {
-
+const Home = () => {
+    console.log('Home rendering');
     return (
         <React.Fragment>
-            <div>I'm here</div>
+            <Article />
         </React.Fragment>
     );
 }

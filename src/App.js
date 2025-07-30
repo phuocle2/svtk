@@ -11,6 +11,7 @@ import './App.css';
 import Home from './components/Home';
 
 function App() {
+  // console.log('App rendering');
   return (
     <div className="App">
       <Router>
