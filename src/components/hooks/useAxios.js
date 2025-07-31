@@ -25,16 +25,14 @@ const useAxios = (options) => {
         };
 
         fetchData();
-        
-        if (loading) {
-            // console.log('useAxios loading...');
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+        return () => {
+            // Cleanup if necessary
             setData(null);
             setError(null);
-        } else if (error) {
-            // console.log('useAxios error:', error);
-            setData(null);
-            setLoading(false);
-        }
+            setLoading(true);
+        };
+        
     }, [options.url, options.data]);
 
     return { data, error, loading };
