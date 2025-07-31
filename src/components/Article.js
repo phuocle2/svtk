@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react';
+import React, { useContext } from 'react';
 
 // import { useFetch } from './useFetch';
 
@@ -15,9 +15,9 @@ export const Article = () => {
     // console.log("Article rendering");
     const useCtx = useContext(AuthContext);
     
-    const [ url, setUrl ] = useState(useCtx.svtk_bot);
+    // const [ url, setUrl ] = useState(useCtx.svtk_bot);
     // const [ data, setData ] = useState();
-    
+    const url = useCtx.svtk_bot;
     const {data} = useAxios({url, 'data': useCtx.vpns});
     
     // console.log(data);
