@@ -7,7 +7,7 @@ import Article from './Article'
 
 
 const Home = () => {
-    console.log('Home rendering');
+    // console.log('Home rendering');
     return (
         <React.Fragment>
             <Article />
