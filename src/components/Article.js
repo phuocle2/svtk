@@ -21,8 +21,11 @@ export const Article = () => {
     return (
         <React.Fragment>
             <div className='Article'>
+                
                 <div><h1>Sống Với Thánh Kinh</h1></div>
+                
                 <RefVpns refUrl={useCtx.vpns} title={data && data?.title} articleHref={data && data?.articleHref} />
+                
                 <div id='content_card'>
                     {loading && <p>Loading...</p>}
                     {!loading && error && <p>{error}</p>}
@@ -87,12 +90,15 @@ export const Article = () => {
                         );
                     })}
                 </div>
+                
+                <div>
+                    {!loading && !error && data && data?.message.slice(data && data?.message.length - 1).map((d, index) => {
+                        return (
+                            <p key={index}>{d}</p>
+                        );
+                    })}
+                </div>
 
-                {!loading && !error && data && data?.message.slice(data && data?.message.length - 1).map((d, index) => {
-                    return (
-                        <p key={index}>{d}</p>
-                    );
-                })}
             </div>
         </React.Fragment>
     );

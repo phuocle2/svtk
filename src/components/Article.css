@@ -2,7 +2,7 @@
     font-size: 1.2em;
     background-color: rgb(255, 255, 255);
     color: black;
-    /* padding: 20px; */
+    padding: 20px;
     text-align: left;
     letter-spacing: 0.05cap;
     line-height: 150%;
@@ -14,11 +14,13 @@
     padding: 50px 15px;
     margin: 0px;
     text-transform: uppercase;
+    font-family: "Roboto", sans-serif;
 }
 
 #content_card {
-    border: 1px solid rgb(210, 210, 210);
-    padding: 10px;
+    width: auto;
+    border: 1px solid rgba(255, 94, 0, 0.456);
+    padding: 20px;
     border-radius: 15px;
     background-color: rgb(255, 255, 255);
     /* filter: blur(15px); */
@@ -32,4 +34,29 @@ a {
 
 .Article .KeyVerse, .Article .Reflection {
     font-weight: bold;
+}
+
+@media screen and (max-width: 600px) {
+    .Article {
+        font-size: 1em;
+    }
+
+    .Article h1 {
+        font-size: 1.5em;
+        padding: 30px 10px;
+    }
+
+    .Article h2 {
+        /* vw: 1% of the viewport width */
+        /* vh: 1% of the viewport height */
+        /* vmin: The smaller of vw or vh. */
+        /* vmax: The larger of vw or vh. */
+        font-size: 5vw;
+    }
+
+    #content_card {
+        padding: 20px;
+        width: fit-content;
+    }
+    
 }

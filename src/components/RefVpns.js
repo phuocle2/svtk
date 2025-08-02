@@ -9,6 +9,9 @@ const RefVpns = (options) => {
             <div className='RefVpns'>
                 <p>
                     <span>
+                        <i>Source:</i>
+                    </span> <br />
+                    <span>
                         <a href={options?.refUrl} target="_blank" rel="noopener noreferrer">
                             Văn Phẩm Nguồn Sống (vnps.org)
                         </a>

@@ -11,3 +11,23 @@
     line-height: 3rem;
     /* font-size: 1.5em; */
 }
+
+.Header .line {
+    width: 100%;
+    height: 15px;
+    background-color: rgb(225, 48, 17);
+}
+
+@media screen and (max-width: 600px) {
+    .Header p {
+        font-size: 1em;
+        line-height: 2rem;
+        padding-left: 10px;
+    }
+
+    .Header .line {
+        width: 100%;
+        height: 7px;
+    }
+    
+}

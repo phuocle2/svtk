@@ -4,3 +4,13 @@
     text-decoration: none;
     background-color: rgb(255, 94, 0);
 }
+
+@media screen and (max-width: 600px) {
+    .RefVpns a {
+        /* display: flex;
+        flex-direction: column; */
+        padding: 3px;
+        font-size: 0.9em;
+    }
+    
+}
