@@ -1,7 +1,35 @@
+.Article {
+    font-size: 1.2em;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    /* padding: 20px; */
+    text-align: left;
+    letter-spacing: 0.05cap;
+    line-height: 150%;
+}
+
+.Article h1 {
+    font-size: 2em;
+    background-color: rgb(255, 233, 218);
+    padding: 50px 15px;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
 #content_card {
     border: 1px solid rgb(210, 210, 210);
     padding: 10px;
     border-radius: 15px;
     background-color: rgb(255, 255, 255);
     /* filter: blur(15px); */
+}
+
+#content_card:has(a)
+a {
+    color: rgb(224, 0, 41);
+    text-decoration: none;
+}
+
+.Article .KeyVerse, .Article .Reflection {
+    font-weight: bold;
 }

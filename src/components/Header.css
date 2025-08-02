@@ -1,0 +1,13 @@
+.Header p {
+    font-size: 1.2em;
+    background-color: rgb(255, 94, 0);
+    color: white;
+    margin: 0;
+    /* padding-top: 10px; */
+    padding-left: 15px;
+
+    text-align: left;
+    letter-spacing: 0.1cap;
+    line-height: 3rem;
+    /* font-size: 1.5em; */
+}
